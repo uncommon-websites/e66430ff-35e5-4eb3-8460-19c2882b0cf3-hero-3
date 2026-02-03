@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friendly Product</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+</head>
+<body class="bg-white text-black">
+
+    <div class="w-full min-h-screen px-5 py-6 md:px-10 md:py-10 mx-auto max-w-[2400px]">
+        
+        <!-- Navigation -->
+        <!-- Grid layout: 12 columns to handle the specific 25% interval spacing -->
+        <header class="grid grid-cols-2 md:grid-cols-12 gap-4 text-[15px] leading-none mb-32 md:mb-64">
+            
+            <!-- Logo: Far Left -->
+            <div class="col-span-1 md:col-span-3 tracking-tight text-black">
+                Friendly Product
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <div class="md:hidden col-span-1 text-right font-medium">Menu</div>
+
+            <!-- Desktop Links -->
+            <!-- Projects: Starts at 25% (Col 4) -->
+            <div class="hidden md:block md:col-start-4 md:col-span-3">
+                <a href="#" class="hover:text-[#374151] transition-colors">Projects</a>
+            </div>
+
+            <!-- Profile: Starts at 50% (Col 7) -->
+            <div class="hidden md:block md:col-start-7 md:col-span-3">
+                <a href="#" class="hover:text-gray-600 transition-colors">Profile</a>
+            </div>
+
+            <!-- Lights Off: Starts at 75% (Col 10) -->
+            <div class="hidden md:block md:col-start-10 md:col-span-2">
+                <button class="hover:text-gray-600 transition-colors">Lights Off</button>
+            </div>
+
+            <!-- Contact: Far Right -->
+            <div class="hidden md:block md:col-start-12 md:col-span-1 text-right">
+                <a href="#" class="hover:text-gray-600 transition-colors">Contact</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Text Section -->
+            <section class="mb-32 md:mb-52">
+                <h1 class="text-2xl md:text-4xl lg:text-[2.65rem] leading-[1.15] tracking-tight font-normal max-w-full md:max-w-[78%] lg:max-w-[72%] text-black">
+                    We transform startup ideas into market-ready products through integrated design and engineering expertise. We partner with VC-backed founders to build world-class digital experiences from the ground up.
+                </h1>
+            </section>
+
+            <!-- Project Section -->
+            <section class="w-full">
+                <!-- Project Info Header -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-y-2 md:gap-y-0 mb-5 text-[15px]">
+                    
+                    <!-- Title: Aligns with 'Projects' (Col 4) -->
+                    <div class="md:col-start-4 md:col-span-3 font-medium text-black">
+                        Startup Portfolio
+                    </div>
+
+                    <!-- Description: Aligns with 'Profile' (Col 7) -->
+                    <div class="md:col-start-7 md:col-span-6 lg:col-span-5 text-gray-500 leading-normal">
+                        Integrated design and engineering for early-stage founders, turning ambitious visions into functional, market-ready digital products.
+                    </div>
+                </div>
+
+                <!-- Project Image -->
+                <div class="grid grid-cols-1 md:grid-cols-12">
+                    <!-- Image: Aligns with 'Projects' (Col 4) and spans to end -->
+                    <div class="md:col-start-4 md:col-span-9">
+                        <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/e66430ff-35e5-4eb3-8460-19c2882b0cf3/hero-3-img-0-1770088821273.png" alt="Tsu Lange Yor Project" class="w-full h-auto object-cover grayscale block aspect-[16/9] md:aspect-[16/8.5]">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>
